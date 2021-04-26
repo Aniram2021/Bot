@@ -24,6 +24,7 @@ if(button!==undefined) {
         if(links[i].href.indexOf('xn----7sbab5aqcbiddtdj1e1g.xn--p1ai')!=-1) {
             let link = links[i];
             console.log("Нашел фразу" + link);
+            link.removeAttribute("target");
             link.click();
             break;
         }
