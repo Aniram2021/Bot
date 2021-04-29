@@ -1,4 +1,4 @@
-// ==UserScript==
+/// ==UserScript==
 // @name         Bot For Yandex
 // @namespace    http://tampermonkey.net/
 // @version      0.1
@@ -33,7 +33,7 @@ let i = 0;
 
 if(button !== undefined) {
 	document.cookie = "site="+site;
-}else if (location.hostname == "www.yandex.ru") {
+}else if (location.hostname == "yandex.ru") {
 	site = getCookie("site");
 }else{
 	site = location.hostname;
